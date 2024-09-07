@@ -896,13 +896,13 @@ span{
     /* LINK AREA STARTS*/
 
 
-    ion-icon {
-        font-size: 30px;
+    a ion-icon {
+        font-size: 19px;
         margin-inline: 0.5rem;
     }
 
     a {
-        font-size: 30px;
+        font-size: 15px;
     }
 
     a:hover {
