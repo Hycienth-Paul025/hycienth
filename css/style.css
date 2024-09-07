@@ -296,10 +296,6 @@ footer p {
     text-align: center;
 }
 
-footer a {
-    margin: 0 1rem;
-}
-
 
 .footer-col {
     width: 25%;
@@ -329,6 +325,11 @@ footer a {
     font-weight: 300;
     color: #bbb;
     transition: all 0.3s ease;
+}
+
+
+footer a {
+    margin: 0 1rem;
 }
 
 footer a:visited {
@@ -664,6 +665,10 @@ span{
         font-weight: 600;
     }
 
+    .contact p a{
+        font-size: 15px;
+    }
+
     .contact-h2 {
         text-align: left;
     }
@@ -713,6 +718,9 @@ span{
     }
 
 
+    footer a {
+        font-size: 11px;
+    }
 
     .footer-col {
         width: 25%;
@@ -736,6 +744,7 @@ span{
     .footer-col .social-links a {
         display: block;
         transition: none;
+        font-size: 13px;
     }
 
     .footer-col .social-links a:active {
@@ -826,7 +835,7 @@ span{
         max-width: 100%;
     } */
 span{
-    font-size: 15px;
+    font-size: 10px;
     text-transform: uppercase;
 }
     
@@ -951,8 +960,8 @@ span{
 
     dl {
         margin: 2rem;
-        line-height: 1rem;
-        font: 22px sans-serif;
+        line-height: 2rem;
+        font: 15px sans-serif;
     }
 
 
@@ -963,6 +972,10 @@ span{
     .contact {
         margin: 2rem;
         font-weight: 600;
+    }
+
+    .contact p a{
+        font-size: 10px;
     }
 
     .contact-h2 {
@@ -1037,12 +1050,17 @@ span{
     .footer-col .social-links a {
         display: block;
         transition: none;
+        font-size: 13px;
     }
 
     .footer-col .social-links a:active {
         display: none;
     }
 
+    footer a {
+        margin: 0 1rem;
+        font-size: 10px;
+    }
     /* FOOTER ENDS*/
 }
 
