@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PSES contact page &#128222;</title>
-  <link rel="icon" href="images/paulo.jpg" type="image/x-icon" />
+  <link rel="icon" href="images/logo.png" type="image/x-icon" />
   <link rel="stylesheet" href="css/style.css" />
   <script src="js/main.js" defer></script>
 </head>
@@ -15,7 +15,7 @@
     <nav class="header-nav">
 
       <div class="home-link">
-        <a href="index.html"><img src="images/logo.png.png" alt="logo"></a>
+        <a href="index.html"><img src="images/logo.png" alt="logo"></a>
         <span>Contact Us</span>
       </div>
       <input type="checkbox" id="sidebar-active">
@@ -109,34 +109,38 @@
               pattern="[0-9]{4}[0-9]{3}[0-9]{4}" required />
           </p>
           <p>
-            <label class="label" for="address">Address Line 1 <span class="opacity">(required)</span></label>
+            <label class="label" for="address">Address Line 1 <div class="opacity">(required)</div></label>
             <br>
             <input class="contact-input" name="text" id="address">
           </p>
           <p>
-            <label class="label" for="address">Address Line 2 <span class="opacity">(required)</span></label>
+            <label class="label" for="address">Address Line 2 <div class="opacity">(required)</div></label>
             <br>
             <input class="contact-input" name="text" id="location">
           </p>
 
           <div class="code">
             <p>
-              <label class="label" for="city">City <span class="opacity">(required)</span></label>
+              <label for="city">City <div class="opacity">(required)</div></label>
               <br>
-              <input class="contact-input" name="text" id="city">
+              <input id="code-input" name="text" type="city">
             </p>
             <p>
-              <label class="label" for="code">ZIP Code <span class="opacity">(required)</span></label>
+              <label for="code">ZIP Code <div class="opacity">(required)</div></label>
               <br>
-              <input class="contact-input" name="text" id="code">
+              <input id="code-input" name="text" type="code">
             </p>
             <p>
-              <label class="label" for="state">State <span class="opacity">(required)</span></label>
+              <label for="state">State <div class="opacity">(required)</div></label>
               <br>
-              <input class="contact-input" name="text" id="state">
+              <input id="code-input" name="text" type="state">
             </p>
           </div>
+<br>
 
+<p>
+
+</p>
           <br>
           <h5>Select Product</h5>
           <p>
