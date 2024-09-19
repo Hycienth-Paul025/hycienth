@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PSES contact page &#128222;</title>
-  <link rel="icon" href="images/logo.png" type="image/x-icon" />
-  <link rel="stylesheet" href="css/style.css" />
-  <script src="js/main.js" defer></script>
+  <link rel="icon" href="images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -37,12 +37,12 @@
           <li>
             <a href="https://www.facebook.com/profile.php?id=61561428171839&mibextid=ZbWKwL" target="_blank"><ion-icon
                 name="logo-facebook"></ion-icon></a>
-                </li>
-                <li>
+          </li>
+          <li>
             <a href="https://www.instagram.com/paulosolarenergysolution_02?igsh=NmhyajBmbm9kM2d1" target="_blank">
               <ion-icon name="logo-instagram"></ion-icon></a>
-              </li>
-              <li>
+          </li>
+          <li>
             <a href="https://wa.link/so9y4v" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
           </li>
         </ul>
@@ -54,9 +54,8 @@
 
   <figure class="grid">
     <img src="images/volatic-1424142442-612x612.jpg" alt="working on solar system" width="612" height="612"
-      loading="lazy" />
-    <img src="images/stock-1127159203-612x612.jpg" alt="installing solar panel" width="612" height="612"
-      loading="lazy" />
+      loading="lazy">
+    <img src="images/stock-1127159203-612x612.jpg" alt="installing solar panel" width="612" height="612" loading="lazy">
   </figure>
   <figure>
     <figcaption>
@@ -75,15 +74,16 @@
   </p>
 
   <address>
-    123, Greenland Avenue, <br />
+    123, Greenland Avenue, <br>
     Victoria Island, Lagos, 102 102, Nigeria.
-    <br /><br />
+    <br><br>
   </address>
 
   <div class="contact">
+
     <p>
       Phone:&#128222; <a href="tel:+2347032545736">(+234)703-254-5736</a>
-      <br /><br />
+      <br><br>
       E-mail us @:&#128231;
       <a href="email:hycienthp025@gmail.com">hycienthp025@gmail.com</a>
     </p>
@@ -91,91 +91,91 @@
 
   <main>
     <article>
-      <h2 class="contact-h2">Your Details and Order</h2>
 
-      <form action="https://httpbin.org/get" method="get" class="contact-form">
-        <fieldset class="contact-fieldset">
-          <p>
-            <label class="label" for="name">Name:</label>
-            <input class="contact-input" type="text" name="name" id="name" placeholder="Full name" required />
-          </p>
-          <p>
-            <label class="label" for="email">Email:</label>
-            <input class="contact-input" type="email" name="email" id="email" placeholder="Email" required />
-          </p>
-          <p>
-            <label class="label" for="phone">Phone:</label>
-            <input class="contact-input" type="tel" name="phone" id="phone" placeholder="+234123456789"
-              pattern="[0-9]{4}[0-9]{3}[0-9]{4}" required />
-          </p>
-          <p>
-            <label class="label" for="address">Address Line 1 <div class="opacity">(required)</div></label>
-            <br>
-            <input class="contact-input" name="text" id="address">
-          </p>
-          <p>
-            <label class="label" for="address">Address Line 2 <div class="opacity">(required)</div></label>
-            <br>
-            <input class="contact-input" name="text" id="location">
-          </p>
+      <div class="contact-container">
 
-          <div class="code">
-            <p>
-              <label for="city">City <div class="opacity">(required)</div></label>
-              <br>
-              <input id="code-input" name="text" type="city">
-            </p>
-            <p>
-              <label for="code">ZIP Code <div class="opacity">(required)</div></label>
-              <br>
-              <input id="code-input" name="text" type="code">
-            </p>
-            <p>
-              <label for="state">State <div class="opacity">(required)</div></label>
-              <br>
-              <input id="code-input" name="text" type="state">
-            </p>
+
+     
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <h2 class="contact-h2">Your Details and Order</h2>
+          <input type="hidden" name="access_key" value="39f3715f-0f9d-4b83-82fd-9c09a84c6b7d">
+
+          <div class="contact-form">
+            <label for="name">Name</label>
+            <input name="name" type="text" placeholder="Enter your name" required>
           </div>
-<br>
 
+          <div class="contact-form">
+            <label for="tel">Phone</label>
+            <input name="tel" type="tel" placeholder="+ 123 456 7890" pattern="{0-9}{4}{0-9}{3}{0-9}{4}" required>
+          </div>
 
-<h2>  Empowering a Sustainable Future
-</h2>
-<p class="product">
-  Efficiency and durability are more than just features of our products—they are the foundation of our commitment to sustainability. By providing solar solutions that are built to last and perform at the highest levels, Paulo Solar Energy Solution is helping to drive the transition to clean, renewable energy across Nigeria. Our goal is to empower our customers to achieve energy independence while contributing to a greener and more sustainable future.
-<br><br>
-  Choose Paulo Solar Energy Solution for solar technology that delivers on performance, reliability, and value. Explore our range of products and discover how we can help you make the most of solar power today and for years to come.
-</p>
-          <br>
-          <h5>Select Product</h5>
-          <p>
+          <div class="contact-form">
+            <label for="email">Email</label>
+            <input name="email" type="email" placeholder="Enter your email" required>
+          </div>
+
+          <div class="contact-form">
+            <label for="address">Addr.</label>
+
+            <input name=" address" type="address" placeholder="enter your address" required>
+          </div>
+
+          <div class="package">
             <input type="checkbox" name="solar" id="solar" value="solar">
             <label for="solar">Solar</label>
-          </p>
-          <p>
+          </div>
+
+          <div class="package">
+            <div class="package-checked"></div>
             <input type="checkbox" name="battery" id="battery" value="battery">
             <label for="battery">Battery</label>
-          </p>
-          <p>
+          </div>
+
+          <div class="package">
             <input type="checkbox" name="inverter" id="inverter" value="inverter">
             <label for="inverter">Inverter</label>
-          </p>
-          <p>
+          </div>
+
+          <div class="package">
             <input type="checkbox" name="energy" id="energy" value="energy">
             <label for="energy">Energy Efficiency Lighting</label>
-          </p>
-          <p>
+          </div>
+
+          <div class="package">
             <input type="checkbox" name="service" id="service" value="service">
             <label for="service">Service</label>
-          </p>
-          <button class="simple" type="submit">Send</button>
-          <button class="button" type="reset"></button>
-        </fieldset>
-      </form>
+          </div>
+
+          <button class="simple" type="submit">Submit <ion-icon name="send"></ion-icon></button>
+        </form>
+
+        <div class="thumb">
+          <img src="images/up.png">
+          <p class="style">Your Best Sureplug &#9989; for Quality Solar Energy Product</p>
+        </div>
+      </div>
+
+
+      <h2> Empowering a Sustainable Future</h2>
+
+      <p class="product">
+        Efficiency and durability are more than just features of our products—they are the foundation of our commitment
+        to sustainability. By providing solar solutions that are built to last and perform at the highest levels, Paulo
+        Solar Energy Solution is helping to drive the transition to clean, renewable energy across Nigeria. Our goal is
+        to empower our customers to achieve energy independence while contributing to a greener and more sustainable
+        future.
+        <br><br>
+        Choose Paulo Solar Energy Solution for solar technology that delivers on performance, reliability, and value.
+        Explore our range of products and discover how we can help you make the most of solar power today and for years
+        to come.
+      </p>
+      <br>
+
     </article>
   </main>
-  <hr />
-  <br />
+  <hr>
+  <br>
 
   <footer>
     <div class="container">
@@ -223,7 +223,7 @@
     </div>
     <br><br><br><br><br>
     <a href="#">Back to Top</a>
-    <p>Copyright &copy; <time id="year"></time> Paulo Solar Energy Solution</p>
+    <p>Copyright &copy; <time id="year"></time Paulo Solar Energy Solution</p>
 
 
   </footer>
@@ -231,6 +231,7 @@
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>

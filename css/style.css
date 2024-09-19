@@ -77,37 +77,29 @@ header {
 .home-link {
     margin-right: auto;
     padding-left: 40px;
-    align-content: center;
+    align-items: center;
 }
 
 .home-link img {
-    height: 3rem;
-    width: 3rem;
+    height: 35px;
+    width: 35px;
+    margin-right: 30px;
 }
 
-span {
+.home-link span {
+    font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     color: aqua;
     text-transform: uppercase;
     flex-wrap: wrap;
+    align-self: center;
 }
 
 .home-link a:hover {
     background-color: transparent;
 }
 
-/* 
-.header-h1 {
-
-    font: 1.5rem 'san serif';
-    font-weight: bolder;
-    text-align: center;
-    background-color: black;
-    color: white;
-    padding: 0.25rem 2.5%;
-}
- */
 .header-nav {
     display: flex;
     flex-direction: row;
@@ -116,7 +108,7 @@ span {
     border-bottom: 2px solid black;
     font-weight: bold;
     box-shadow: 0 6px 5px -5px black;
-
+    align-items: center;
 }
 
 
@@ -135,8 +127,26 @@ span {
 }
 
 .header-ul li a {
+    font-size: 18px;
     color: white;
     text-transform: uppercase;
+}
+
+
+.header-ul li ion-icon {
+    font-size: 20px;
+    margin-inline: 10px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+
+a:hover,
+a:focus {
+    background-color: transparent;
 }
 
 .hero {
@@ -183,27 +193,6 @@ span {
 
 /* LINK AREA STARTS*/
 
-ion-icon {
-    font-size: 30px;
-    margin-inline: 1rem;
-}
-
-a {
-    text-decoration: none;
-    font-weight: bolder;
-}
-
-a:visited {
-    color: black;
-}
-
-a:hover,
-a:focus {
-    color: white;
-    background-color: black;
-    transition: 0.55s ease;
-}
-
 /* LINK AREA ENDS*/
 
 
@@ -236,11 +225,6 @@ figcaption {
 
 
 /*  ABOUT PARAGRAPH AREA STARTS */
-.style {
-    font-weight: 700;
-    font-style: italic;
-    margin: 2rem;
-}
 
 .about {
     margin: 0 3rem 0;
@@ -253,9 +237,9 @@ figcaption {
 /* ABOUT PARAGRAPH AREA ENDS*/
 
 dl {
-    margin: 2rem;
-    font: 22px arial;
-    font-weight: bold;
+    margin: 2rem 5rem;
+    font: 22px fantasy;
+    line-height: 50px;
 }
 
 
@@ -343,72 +327,120 @@ footer a:visited {
 }
 
 .footer-col .social-links a {
+    font-size: 25px;
     display: inline-block;
     margin: 0 10px 10px 0;
     text-align: center;
     color: white;
-    transition: all 0.5s ease;
+    transition: all 0.75s ease;
+}
+
+.footer-col .social-links ion-icon {
+    margin-left: 30px;
 }
 
 .footer-col .social-links a:hover {
-    color: #24262b;
-    background-color: white;
+    font-size: 30px;
+    background-color: transparent;
 }
 
 /* FOOTER ENDS*/
 
 
-/* LABEL INPUT STARTS*/
+/* CONTACT INPUT STARTS*/
 .contact-h2 {
     text-align: center;
+    color: #6d23f7;
+    font: 30px Arial;
+    font-weight: 600;
+    margin-bottom: 80px;
 }
 
-.contact-fieldset {
-    border: none;
-    margin-left: 5rem;
-}
-
-
-.contact-input {
-    padding: 1em;
+.contact-container {
+    background: linear-gradient(#a8d5ff, #474fbb);
+    max-width: 90%;
+    margin-left: 3rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.678);
+    position: relative;
     border-radius: 15px;
+}
+
+.thumb img {
+    max-width: 100%;
+    max-height: 500px;
+}
+
+
+.thumb .style {
+    color: #3d2b5e;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+    margin: 0 2rem;
+}
+
+.contact-container form {
+    margin: 1rem;
     width: 40%;
 }
 
-.label {
-    display: block;
-    font-weight: bold;
-    margin-top: 2rem;
+.contact-form {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
 }
 
-.code {
-    font-weight: bold;
-    display: block;
-    margin-top: 3rem;
+.contact-form {
+    margin-bottom: 50px;
 }
 
-#code-input {
-    border-radius: 15px;
-    height: 40px;
-    width: 170px;
-    margin-bottom: 1.5rem;
+.contact-form label {
+    flex-basis: 28%;
+    font-weight: 700;
+    line-height: 3px;
+    color: #03238d;
 }
 
-.button {
-    position: absolute;
-    left: -10000px;
+.contact-form input {
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 40px;
+    text-transform: capitalize;
+    flex-basis: 75%;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #333;
 }
 
-.product{
+.contact-form textarea {
+    resize: none;
+}
+
+::placeholder {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding-top: 20px;
+    color: #3d2b5e;
+}
+
+.package label {
+    color: #03238d;
+    font-weight: 600;
+}
+
+
+.product {
     font-weight: bolder;
+    margin: 3rem;
 }
 
-h5 {
-    font: 22px 'Nunito';
-    font-weight: bold;
-    font-size: 30px;
-    margin: 2rem;
-}
 
 #solar {
     margin-bottom: 1.5rem;
@@ -431,25 +463,22 @@ h5 {
 }
 
 .simple {
+    font-size: 25px;
     font-family: inherit;
     font-weight: bolder;
-    color: black;
-    border: solid #1270e2;
-    padding: 10px;
-    margin: 1rem 3px;
-    border-radius: 15%;
-
+    color: #fff;
+    border: 0;
+    outline: 0;
+    background: linear-gradient(#5177f5, #664ebd);
+    padding: 20px 30px;
+    margin: 30px 25% 4px;
+    border-radius: 15px;
+    cursor: pointer;
 }
 
-.simple:hover {
-    color: whitesmoke;
-    background-color: rgb(20, 109, 20);
-    border: solid black;
-    transition: 0.45s ease;
-}
-
-.opacity {
-    opacity: 0.5;
+.simple ion-icon {
+    padding-left: 10px;
+    font-size: 20px;
 }
 
 /* LABEL INPUT ENDS*/
@@ -480,7 +509,7 @@ details {
 
 @media screen and (max-width:750px) {
 
-    
+
     html {
         font-size: 11px;
     }
@@ -524,6 +553,49 @@ details {
 
     /* TABLE AREA ENDS*/
 
+    /* NAV AREA STARTS*/
+
+
+    .home-link {
+        margin-right: auto;
+        padding-left: 40px;
+        align-items: center;
+    }
+
+    .home-link img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .home-link span {
+        font-size: 10px;
+    }
+
+    .header-nav {
+        max-width: 100%;
+        height: 60px;
+    }
+
+    .header-ul {
+        display: block;
+    }
+
+    .header-ul li {
+        display: block;
+        margin-bottom: 50px;
+        margin-left: 50px;
+    }
+
+    .header-ul li a {
+        font-size: 28px;
+        color: black;
+    }
+
+
+    .header-ul li ion-icon {
+        font-size: 30px;
+    }
+
 
     .open-menu-bar {
         color: white;
@@ -550,34 +622,6 @@ details {
         z-index: 9;
     }
 
-    /* NAV AREA STARTS*/
-    /* 
-    .header-h1 {
-        font-size: 1rem;
-        text-align: center;
-        max-width: 100%;
-    } */
-    span {
-        font-size: 2rem;
-        text-transform: uppercase;
-    }
-
-    .home-link img {
-        height: 4rem;
-        width: 4rem;
-    }
-
-    .header-ul li a {
-        color: black;
-        display: block;
-        text-transform: uppercase;
-        box-sizing: border-box;
-        height: auto;
-        width: 100%;
-        padding: 20px 30px;
-        justify-content: flex-start;
-    }
-
 
     .links-container {
         flex-direction: column;
@@ -595,41 +639,17 @@ details {
     }
 
 
-    .header-nav {
-        max-width: 100%;
-        height: 60px;
-        font-size: 16px;
-    }
-
-
-    .header-ul {
-        display: block;
-        gap: 20px;
-        padding: 1rem 2.5%;
-    }
-
 
     .hero-h2 {
-        font-size: 8px;
-        margin: 0;
+        display: none;
     }
 
     /*NAV AREA ENDS*/
 
     /* LINK AREA STARTS*/
 
-
-    ion-icon {
-        font-size: 30px;
-        margin-inline: 0.5rem;
-    }
-
     a {
-        font-size: 30px;
-    }
-
-    a:hover {
-        background-color: #bbb;
+        color: #185375;
     }
 
     /* LINK AREA ENDS*/
@@ -637,14 +657,13 @@ details {
 
     /* IMAGE AREA STARTS*/
 
-
     .grid img {
-        max-width: 49.7%;
+        max-width: 45%;
         max-height: auto;
     }
 
     .grid {
-        margin: 15px 15px;
+        margin: 15px 10px;
     }
 
     figcaption {
@@ -663,12 +682,10 @@ details {
     /* DETAILS ENDS*/
 
     /*  ABOUT PARAGRAPH AREA STARTS */
-    .style {
-        font-weight: 700;
-        font-style: italic;
-    }
+
 
     .about {
+        margin: 2rem;
         word-spacing: 5px;
         line-height: 2rem;
         font-weight: bold;
@@ -688,58 +705,71 @@ details {
     }
 
 
-
-
-    /* LABEL INPUT STARTS*/
-
-    .contact {
-        margin: 2rem;
+    /* CONTACT INPUT STARTS*/
+    .contact-h2 {
+        font: 20px arial;
         font-weight: 600;
     }
 
-    .contact p a {
+    .contact-container {
+        max-width: 80%;
+        max-height: auto;
+        margin-left: 7rem;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .contact-container form {
+        margin: 2rem;
+        width: 60%;
+    }
+
+
+    .contact-form:last-child {
+        margin-bottom: 20px;
+    }
+
+    .contact-form label {
+        line-height: 10px;
         font-size: 15px;
     }
 
-    .contact-h2 {
-        text-align: left;
-    }
-
-    .contact-fieldset {
-        margin-left: 2rem;
-        margin-top: 2rem;
-    }
-
-    .label {
-        display: block;
-        font-weight: bold;
-        margin-top: 2rem;
-    }
-
-    .code {
-        margin-top: 1rem;
+    .contact-form input {
+        font-size: 10px;
     }
 
 
-    #code-input {
-        height: 30px;
-        width: 70px;
+    ::placeholder {
+        font-size: 10px;
     }
 
-
-    h5 {
-        font: 29px 'Nunito';
-        font-weight: normal;
-        margin: 1rem;
+    .package label {
+        font-size: 15px;
     }
+
+    .thumb {
+        display: none;
+    }
+
 
     .simple {
-        font-size: 10px;
-        border: 0.5px solid black;
-        margin: 1.8rem 0.2rem;
+        font-size: 20px;
+        padding: 10px 10px;
+        cursor: none;
+    }
+
+    .simple ion-icon {
+        padding-left: 6px;
+        font-size: 12px;
     }
 
     /* LABEL INPUT ENDS*/
+
+
+    .contact a {
+        font-size: 10px;
+        margin: 0 10px;
+    }
 
 
     /* FOOTER STARTS*/
@@ -750,9 +780,16 @@ details {
     }
 
 
-    footer a {
-        font-size: 11px;
+    footer {
+        max-width: 100%;
+        height: auto;
     }
+
+    footer p {
+        color: white;
+        text-align: center;
+    }
+
 
     .footer-col {
         width: 25%;
@@ -760,7 +797,26 @@ details {
 
     .footer-col h4 {
         font-size: 10px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        max-width: 10vw;
     }
+
+    .footer-col ul li a:hover {
+        display: none;
+    }
+
+    .footer-col .social-links a {
+        font-size: 15px;
+        display: block;
+        height: 30px;
+        margin-right: 90px;
+    }
+
+    .footer-col .social-links a:hover {
+        display: none;
+    }
+
 
 
     .footer-col ul li a {
@@ -774,17 +830,18 @@ details {
         display: none;
     }
 
-    .footer-col .social-links a {
-        display: block;
-        transition: none;
-        font-size: 13px;
-    }
 
     .footer-col .social-links a:active {
         display: none;
     }
 
     /* FOOTER ENDS*/
+
+    .product {
+        line-height: 2rem;
+        margin: 5rem;
+    }
+
 }
 
 
@@ -827,12 +884,55 @@ details {
 
     table {
         text-align: center;
-        margin-left: 3rem;
+        margin-left: 20rem;
     }
 
 
 
     /* TABLE AREA ENDS*/
+
+    /* NAV AREA STARTS*/
+
+
+    .home-link {
+        margin-right: auto;
+        padding-left: 40px;
+        align-items: center;
+    }
+
+    .home-link img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .home-link span {
+        font-size: 10px;
+    }
+
+    .header-nav {
+        max-width: 100%;
+        height: 60px;
+    }
+
+    .header-ul {
+        display: block;
+    }
+
+    .header-ul li {
+        display: block;
+        margin-bottom: 50px;
+        margin-left: 50px;
+    }
+
+    .header-ul li a {
+        font-size: 28px;
+        color: black;
+    }
+
+
+    .header-ul li ion-icon {
+        font-size: 30px;
+    }
 
 
     .open-menu-bar {
@@ -860,34 +960,6 @@ details {
         z-index: 9;
     }
 
-    /* NAV AREA STARTS*/
-    /* 
-    .header-h1 {
-        font-size: 1rem;
-        text-align: center;
-        max-width: 100%;
-    } */
-    span {
-        font-size: 2rem;
-        text-transform: uppercase;
-    }
-
-    .home-link img {
-        height: 4rem;
-        width: 4rem;
-    }
-
-    .header-ul li a {
-        color: black;
-        display: block;
-        text-transform: uppercase;
-        box-sizing: border-box;
-        height: auto;
-        width: 100%;
-        padding: 20px 30px;
-        justify-content: flex-start;
-    }
-
 
     .links-container {
         flex-direction: column;
@@ -905,41 +977,17 @@ details {
     }
 
 
-    .header-nav {
-        max-width: 100%;
-        height: 60px;
-        font-size: 16px;
-    }
 
-
-    .header-ul {
-        display: block;
-        gap: 20px;
-        padding: 1rem 2.5%;
-    }
-
-
-    .hero-h2 {
-        font-size: 8px;
-        margin: 0;
+    .hero {
+        display: none;
     }
 
     /*NAV AREA ENDS*/
 
     /* LINK AREA STARTS*/
 
-
-    ion-icon {
-        font-size: 30px;
-        margin-inline: 0.5rem;
-    }
-
     a {
-        font-size: 30px;
-    }
-
-    a:hover {
-        background-color: #bbb;
+        color: #185375;
     }
 
     /* LINK AREA ENDS*/
@@ -947,14 +995,13 @@ details {
 
     /* IMAGE AREA STARTS*/
 
-
     .grid img {
-        max-width: 49.7%;
+        max-width: 45%;
         max-height: auto;
     }
 
     .grid {
-        margin: 15px 15px;
+        margin: 15px 10px;
     }
 
     figcaption {
@@ -973,12 +1020,10 @@ details {
     /* DETAILS ENDS*/
 
     /*  ABOUT PARAGRAPH AREA STARTS */
-    .style {
-        font-weight: 700;
-        font-style: italic;
-    }
+
 
     .about {
+        margin: 2rem;
         word-spacing: 5px;
         line-height: 2rem;
         font-weight: bold;
@@ -998,58 +1043,72 @@ details {
     }
 
 
-
-
-    /* LABEL INPUT STARTS*/
-
-    .contact {
-        margin: 2rem;
+    /* CONTACT INPUT STARTS*/
+    .contact-h2 {
+        font: 15px arial;
+        word-spacing: 5px;
         font-weight: 600;
     }
 
-    .contact p a {
+    .contact-container {
+        max-width: 80%;
+        max-height: auto;
+        margin-left: 7rem;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .contact-container form {
+        margin: 2rem;
+        width: 60%;
+    }
+
+
+    .contact-form{
+        margin-bottom: 50px;
+    }
+
+    .contact-form label {
+        line-height: 10px;
         font-size: 15px;
     }
 
-    .contact-h2 {
-        text-align: left;
-    }
-
-    .contact-fieldset {
-        margin-left: 2rem;
-        margin-top: 2rem;
-    }
-
-    .label {
-        display: block;
-        font-weight: bold;
-        margin-top: 2rem;
-    }
-
-    .code {
-        margin-top: 1rem;
+    .contact-form input {
+        font-size: 10px;
     }
 
 
-    #code-input {
-        height: 30px;
-        width: 70px;
+    ::placeholder {
+        font-size: 10px;
     }
 
-
-    h5 {
-        font: 29px 'Nunito';
-        font-weight: normal;
-        margin: 1rem;
+    .package label {
+        font-size: 15px;
     }
+
+    .thumb {
+        display: none;
+    }
+
 
     .simple {
-        font-size: 10px;
-        border: 0.5px solid black;
-        margin: 1.8rem 0.2rem;
+        font-size: 20px;
+        padding: 10px 10px;
+        cursor: none;
+    }
+
+    .simple ion-icon {
+        padding-left: 6px;
+        font-size: 12px;
     }
 
     /* LABEL INPUT ENDS*/
+
+
+    .contact a {
+        font-size: 10px;
+        margin: 0 10px;
+    }
 
 
     /* FOOTER STARTS*/
@@ -1060,9 +1119,16 @@ details {
     }
 
 
-    footer a {
-        font-size: 11px;
+    footer {
+        max-width: 100%;
+        height: auto;
     }
+
+    footer p {
+        color: white;
+        text-align: center;
+    }
+
 
     .footer-col {
         width: 25%;
@@ -1070,7 +1136,26 @@ details {
 
     .footer-col h4 {
         font-size: 10px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        max-width: 10vw;
     }
+
+    .footer-col ul li a:hover {
+        display: none;
+    }
+
+    .footer-col .social-links a {
+        font-size: 15px;
+        display: block;
+        height: 30px;
+        margin-right: 90px;
+    }
+
+    .footer-col .social-links a:hover {
+        display: none;
+    }
+
 
 
     .footer-col ul li a {
@@ -1084,21 +1169,36 @@ details {
         display: none;
     }
 
-    .footer-col .social-links a {
-        display: block;
-        transition: none;
-        font-size: 13px;
-    }
 
     .footer-col .social-links a:active {
         display: none;
     }
 
     /* FOOTER ENDS*/
+
+    .product {
+        line-height: 2rem;
+        margin: 5rem;
+    }
+
 }
+
 
 @media screen and (max-width:400px) {
 
+
+
+    html {
+        font-size: 11px;
+    }
+
+    body {
+        max-width: 100%;
+        max-height: auto;
+    }
+
+
+    /* HEADING AREA STARTS*/
 
 
     html {
@@ -1137,12 +1237,55 @@ details {
 
     table {
         text-align: center;
-        margin-left: 3rem;
+        margin-left: 20rem;
     }
 
 
 
     /* TABLE AREA ENDS*/
+
+    /* NAV AREA STARTS*/
+
+
+    .home-link {
+        margin-right: auto;
+        padding-left: 40px;
+        align-items: center;
+    }
+
+    .home-link img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .home-link span {
+        font-size: 10px;
+    }
+
+    .header-nav {
+        max-width: 100%;
+        height: 60px;
+    }
+
+    .header-ul {
+        display: block;
+    }
+
+    .header-ul li {
+        display: block;
+        margin-bottom: 50px;
+        margin-left: 50px;
+    }
+
+    .header-ul li a {
+        font-size: 28px;
+        color: black;
+    }
+
+
+    .header-ul li ion-icon {
+        font-size: 30px;
+    }
 
 
     .open-menu-bar {
@@ -1151,8 +1294,8 @@ details {
 
     .open-menu-bar,
     .close-menu-bar {
-        font-size: 18px;
-        padding: 10px;
+        font-size: 30px;
+        padding: 20px;
         display: block;
     }
 
@@ -1168,34 +1311,6 @@ details {
         top: 0;
         left: 0;
         z-index: 9;
-    }
-
-    /* NAV AREA STARTS*/
-    /* 
-    .header-h1 {
-        font-size: 1rem;
-        text-align: center;
-        max-width: 100%;
-    } */
-    span {
-        font-size: 10px;
-        text-transform: uppercase;
-    }
-
-    .home-link img {
-        height: 4rem;
-        width: 4rem;
-    }
-
-    .header-ul li a {
-        color: black;
-        display: block;
-        text-transform: uppercase;
-        box-sizing: border-box;
-        height: auto;
-        width: 100%;
-        padding: 20px 30px;
-        justify-content: flex-start;
     }
 
 
@@ -1215,41 +1330,17 @@ details {
     }
 
 
-    .header-nav {
-        max-width: 100%;
-        height: 60px;
-        font-size: 16px;
-    }
 
-
-    .header-ul {
-        display: block;
-        gap: 20px;
-        padding: 1rem 2.5%;
-    }
-
-
-    .hero-h2 {
-        font-size: 8px;
-        margin: 0;
+    .hero {
+        display: none;
     }
 
     /*NAV AREA ENDS*/
 
     /* LINK AREA STARTS*/
 
-
-    a ion-icon {
-        font-size: 19px;
-        margin-inline: 0.5rem;
-    }
-
     a {
-        font-size: 15px;
-    }
-
-    a:hover {
-        background-color: #bbb;
+        color: #185375;
     }
 
     /* LINK AREA ENDS*/
@@ -1257,14 +1348,13 @@ details {
 
     /* IMAGE AREA STARTS*/
 
-
     .grid img {
-        max-width: 49.7%;
+        max-width: 45%;
         max-height: auto;
     }
 
     .grid {
-        margin: 15px 15px;
+        margin: 15px 10px;
     }
 
     figcaption {
@@ -1283,12 +1373,10 @@ details {
     /* DETAILS ENDS*/
 
     /*  ABOUT PARAGRAPH AREA STARTS */
-    .style {
-        font-weight: 700;
-        font-style: italic;
-    }
+
 
     .about {
+        margin: 2rem;
         word-spacing: 5px;
         line-height: 2rem;
         font-weight: bold;
@@ -1303,72 +1391,80 @@ details {
 
     dl {
         margin: 2rem;
-        line-height: 2rem;
-        font: 15px sans-serif;
+        line-height: 1rem;
+        font: 22px sans-serif;
     }
 
 
-
-
-    /* LABEL INPUT STARTS*/
-
-    .contact {
-        margin: 2rem;
+    /* CONTACT INPUT STARTS*/
+    .contact-h2 {
+        font-size: 10px;
         font-weight: 600;
     }
 
-    .contact p a {
+    .contact-container {
+        max-width: 8
+        80%;
+        max-height: auto;
+        margin-left: 4rem;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .contact-container form {
+        margin: 2rem;
+        width: 60%;
+    }
+
+
+    .contact-form {
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+
+    .contact-form label {
+        line-height: 10px;
+        font-size: 10px;
+        margin-right: 10px;
+    }
+
+    .contact-form input {
+        font-size: 10px;
+        margin-left: 10px;
+    }
+
+
+    ::placeholder {
         font-size: 10px;
     }
 
-    .contact-h2 {
-        text-align: left;
+    .package label {
+        font-size: 10px;
     }
 
-    .contact-fieldset {
-        margin-left: 2rem;
-        margin-top: 2rem;
+    .thumb {
+        display: none;
     }
 
-    .label {
-        display: block;
-        font-weight: bold;
-        margin-top: 2rem;
-    }
-
-    .contact-input {
-        padding: 0.5em;
-        border-radius: 10px;
-    }
-
-
-
-    .code {
-        font-weight: bold;
-        display: block;
-        margin-top: 1.5rem;
-    }
-
-    #code-input {
-        height: 25px;
-        width: 70px;
-        margin-bottom: 1.5rem;
-    }
-
-
-    h5 {
-        font: 29px 'Nunito';
-        font-weight: normal;
-        margin: 1rem;
-    }
 
     .simple {
         font-size: 10px;
-        border: 0.5px solid black;
-        margin: 1.8rem 0.2rem;
+        padding: 10px 10px;
+        cursor: none;
+    }
+
+    .simple ion-icon {
+        padding-left: 4px;
+        font-size: 10px;
     }
 
     /* LABEL INPUT ENDS*/
+
+
+    .contact a {
+        font-size: 10px;
+        margin: 0 10px;
+    }
 
 
     /* FOOTER STARTS*/
@@ -1379,19 +1475,50 @@ details {
     }
 
 
+    footer {
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer p {
+        color: white;
+        text-align: center;
+    }
+
 
     .footer-col {
-        width: 25%;
+        width: 22%;
+        margin-left: 10px;
     }
 
     .footer-col h4 {
         font-size: 10px;
+        margin-bottom: 20px;
+        margin-left: 15px;
+        max-width: 15vw;
     }
+
+    .footer-col ul li a:hover {
+        display: none;
+    }
+
+    .footer-col .social-links a {
+        font-size: 15px;
+        display: block;
+        height: 30px;
+        margin-right: 90px;
+    }
+
+    .footer-col .social-links a:hover {
+        display: none;
+    }
+
 
 
     .footer-col ul li a {
         font-size: 10px;
         transition: none;
+        flex-wrap: wrap;
     }
 
 
@@ -1399,22 +1526,19 @@ details {
         display: none;
     }
 
-    .footer-col .social-links a {
-        display: block;
-        transition: none;
-        font-size: 13px;
-    }
 
     .footer-col .social-links a:active {
         display: none;
     }
 
-    footer a {
-        margin: 0 1rem;
-        font-size: 10px;
+    /* FOOTER ENDS*/
+
+    .product {
+        line-height: 2rem;
+        margin: 5rem;
     }
 
-    /* FOOTER ENDS*/
 }
+
 
 /* MEDIA  QUERY ENDS */
