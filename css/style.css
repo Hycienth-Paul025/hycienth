@@ -485,9 +485,20 @@ footer a:visited {
 
 
 /* ADDRESS ENDS*/
-address {
-    margin: 2rem;
+   
+address{
+    font-size: 22px;
+    margin: 3rem;
 }
+
+address ion-icon{
+    color :red;
+}
+
+    .contact a {
+        font-size: 13px;
+        margin: 0 10px;
+    }
 
 .contact {
     font-weight: 600;
@@ -712,9 +723,9 @@ details {
     }
 
     .contact-container {
-        max-width: 80%;
+        max-width: 100%;
         max-height: auto;
-        margin-left: 7rem;
+        margin: 1rem;
         justify-content: center;
         margin-bottom: 50px;
     }
@@ -764,6 +775,22 @@ details {
     }
 
     /* LABEL INPUT ENDS*/
+    
+address{
+    font-size: 13px;
+}
+
+address ion-icon{
+    color :red;
+}
+
+    .contact {font-size: 13px;
+    }
+
+    .contact a {
+        font-size: 13px;
+        margin: 0 10px;
+    }
 
 
     .contact a {
@@ -1051,9 +1078,9 @@ details {
     }
 
     .contact-container {
-        max-width: 80%;
+        max-width: 100%;
         max-height: auto;
-        margin-left: 7rem;
+        margin: 1rem;
         justify-content: center;
         margin-bottom: 50px;
     }
@@ -1104,11 +1131,23 @@ details {
 
     /* LABEL INPUT ENDS*/
 
-
-    .contact a {
-        font-size: 10px;
-        margin: 0 10px;
+    address{
+        font-size: 13px;
     }
+    
+    address ion-icon{
+        color :red;
+    }
+    
+        .contact {font-size: 13px;
+        }
+    
+        .contact a {
+            font-size: 13px;
+            margin: 0 10px;
+        }
+
+    
 
 
     /* FOOTER STARTS*/
@@ -1237,7 +1276,7 @@ details {
 
     table {
         text-align: center;
-        margin-left: 20rem;
+        margin-left: 60px;
     }
 
 
@@ -1254,12 +1293,12 @@ details {
     }
 
     .home-link img {
-        height: 20px;
-        width: 20px;
+        height: 30px;
+        width: 30px;
     }
 
     .home-link span {
-        font-size: 10px;
+        font-size: 9px;
     }
 
     .header-nav {
@@ -1398,16 +1437,14 @@ details {
 
     /* CONTACT INPUT STARTS*/
     .contact-h2 {
-        font-size: 10px;
-        font-weight: 600;
+        display: none;
     }
 
     .contact-container {
-        max-width: 8
-        80%;
+        max-width: 95%;
         max-height: auto;
-        margin-left: 4rem;
-        justify-content: center;
+        margin-left: 1rem;
+        justify-content: space-evenly;
         margin-bottom: 50px;
     }
 
@@ -1459,10 +1496,19 @@ details {
     }
 
     /* LABEL INPUT ENDS*/
+address{
+    font-size: 13px;
+}
 
+address ion-icon{
+    color :red;
+}
+
+    .contact {font-size: 13px;
+    }
 
     .contact a {
-        font-size: 10px;
+        font-size: 13px;
         margin: 0 10px;
     }
 
@@ -1481,10 +1527,12 @@ details {
     }
 
     footer p {
-        color: white;
-        text-align: center;
+        font-size: 9px;
     }
-
+    
+footer a{
+    font-size: 8px;
+}
 
     .footer-col {
         width: 22%;
@@ -1495,7 +1543,7 @@ details {
         font-size: 10px;
         margin-bottom: 20px;
         margin-left: 15px;
-        max-width: 15vw;
+        max-width: 25vw;
     }
 
     .footer-col ul li a:hover {
