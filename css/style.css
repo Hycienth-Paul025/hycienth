@@ -407,15 +407,16 @@ footer a:visited {
 }
 
 .contact-form input {
+    height: 50px;
     font-size: 16px;
     font-weight: 600;
     padding-left: 40px;
     text-transform: capitalize;
     flex-basis: 75%;
-    background-color: transparent;
+    background-color: #ffffffcc;
+    border-radius: 15px;
     border: 0;
     outline: 0;
-    border-bottom: 1px solid #333;
 }
 
 .contact-form textarea {
@@ -485,20 +486,20 @@ footer a:visited {
 
 
 /* ADDRESS ENDS*/
-   
-address{
+
+address {
     font-size: 22px;
     margin: 3rem;
 }
 
-address ion-icon{
-    color :red;
+address ion-icon {
+    color: red;
 }
 
-    .contact a {
-        font-size: 13px;
-        margin: 0 10px;
-    }
+.contact a {
+    font-size: 18px;
+    margin: 0 10px;
+}
 
 .contact {
     font-weight: 600;
@@ -736,7 +737,7 @@ details {
     }
 
 
-    .contact-form:last-child {
+    .contact-form {
         margin-bottom: 20px;
     }
 
@@ -747,6 +748,7 @@ details {
 
     .contact-form input {
         font-size: 10px;
+        height: 30px;
     }
 
 
@@ -775,16 +777,17 @@ details {
     }
 
     /* LABEL INPUT ENDS*/
-    
-address{
-    font-size: 13px;
-}
 
-address ion-icon{
-    color :red;
-}
+    address {
+        font-size: 13px;
+    }
 
-    .contact {font-size: 13px;
+    address ion-icon {
+        color: red;
+    }
+
+    .contact {
+        font-size: 13px;
     }
 
     .contact a {
@@ -1091,8 +1094,8 @@ address ion-icon{
     }
 
 
-    .contact-form{
-        margin-bottom: 50px;
+    .contact-form {
+        margin-bottom: 30px;
     }
 
     .contact-form label {
@@ -1102,6 +1105,7 @@ address ion-icon{
 
     .contact-form input {
         font-size: 10px;
+        height: 25px;
     }
 
 
@@ -1131,23 +1135,24 @@ address ion-icon{
 
     /* LABEL INPUT ENDS*/
 
-    address{
+    address {
         font-size: 13px;
     }
-    
-    address ion-icon{
-        color :red;
-    }
-    
-        .contact {font-size: 13px;
-        }
-    
-        .contact a {
-            font-size: 13px;
-            margin: 0 10px;
-        }
 
-    
+    address ion-icon {
+        color: red;
+    }
+
+    .contact {
+        font-size: 13px;
+    }
+
+    .contact a {
+        font-size: 13px;
+        margin: 0 10px;
+    }
+
+
 
 
     /* FOOTER STARTS*/
@@ -1468,6 +1473,7 @@ address ion-icon{
     .contact-form input {
         font-size: 10px;
         margin-left: 10px;
+        height: 15px;
     }
 
 
@@ -1486,7 +1492,7 @@ address ion-icon{
 
     .simple {
         font-size: 10px;
-        padding: 10px 10px;
+        padding: 8px 10px;
         cursor: none;
     }
 
@@ -1496,15 +1502,16 @@ address ion-icon{
     }
 
     /* LABEL INPUT ENDS*/
-address{
-    font-size: 13px;
-}
+    address {
+        font-size: 13px;
+    }
 
-address ion-icon{
-    color :red;
-}
+    address ion-icon {
+        color: red;
+    }
 
-    .contact {font-size: 13px;
+    .contact {
+        font-size: 13px;
     }
 
     .contact a {
@@ -1529,10 +1536,10 @@ address ion-icon{
     footer p {
         font-size: 9px;
     }
-    
-footer a{
-    font-size: 8px;
-}
+
+    footer a {
+        font-size: 8px;
+    }
 
     .footer-col {
         width: 22%;
