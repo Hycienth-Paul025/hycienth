@@ -134,7 +134,8 @@ header {
 }
 
 
-.header-ul li ion-icon {
+.header-ul li a ion-icon {
+    color: #000;
     font-size: 20px;
     margin-inline: 10px;
 }
@@ -611,7 +612,7 @@ details {
 
 
     .open-menu-bar {
-        color: white;
+        color: #000;
     }
 
     .open-menu-bar,
@@ -967,7 +968,7 @@ details {
 
 
     .open-menu-bar {
-        color: white;
+        color: #000;
     }
 
     .open-menu-bar,
@@ -1334,7 +1335,7 @@ details {
 
 
     .open-menu-bar {
-        color: white;
+        color: #000;
     }
 
     .open-menu-bar,
