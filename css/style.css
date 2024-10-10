@@ -247,6 +247,7 @@ figcaption {
 }
 
 .about img{ 
+    max-width: 100%;
     margin: 10px 20px 10px;
 float: left;
 }
@@ -762,6 +763,10 @@ footer a:visited {
 
     .about p {
         font-size: 12px;
+    }
+
+    .about img{
+        display: none;
     }
 
 
