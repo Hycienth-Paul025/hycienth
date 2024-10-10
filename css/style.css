@@ -762,11 +762,11 @@ footer a:visited {
     }
 
     .about p {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .about img{
-        display: none;
+        max-width: 100%;
     }
 
 
