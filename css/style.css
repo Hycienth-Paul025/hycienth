@@ -315,12 +315,13 @@ fieldset {
     background: whitesmoke;
     color: red;
     border-radius: 50%;
-    box-shadow: 20px 20px 10px 5px #000000b2;
+    box-shadow: 20px 20px 10px 5px #444242b2;
 }
 
 #attract p {
     font-family: arial;
     font-weight: 700;
+    text-shadow: 5px 4px 10px #919191d7 ;
     margin: 40px 0;
     margin-left: 50px;
 }
