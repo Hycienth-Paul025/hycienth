@@ -305,14 +305,6 @@ fieldset {
     left: 170px;
 }
 
-
-.thumb .style {
-    color: #3d2b5e;
-    font-size: 25px;
-    font-weight: 700;
-    font-style: italic;
-}
-
 #attract {
     display: flex;
     position: relative;
@@ -2202,6 +2194,10 @@ footer a:visited {
     .contact a {
         font-size: 13px;
         margin: 0 10px;
+    }
+
+    .product{
+        font-size: 14px;
     }
 
 
