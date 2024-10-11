@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background-color: purple;
+    background-color: #520052;
     color: white;
     font-family: Arial, sans-serif, 'Nunito';
     min-width: 100%;
@@ -212,11 +212,17 @@ a:focus {
 /* IMAGE AREA STARTS*/
 
 
+.grid {
+    display: flex;
+    place-content: center space-evenly;
+    flex-flow: row wrap;
+    margin: 30px 0;
+}
+
 .grid img {
     max-width: 100%;
     height: auto;
 }
-
 
 
 figcaption {
@@ -226,13 +232,6 @@ figcaption {
     margin: 0 0 3rem;
 }
 
-
-.grid {
-    display: flex;
-    place-content: center space-evenly;
-    flex-flow: row wrap;
-    margin: 30px 0;
-}
 
 /* IMAGE AREA ENDS*/
 
@@ -577,11 +576,264 @@ footer a:visited {
 
 /* MEDIA QUERY START*/
 
+@media screen and (max-width:768px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        font-size: 22px;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background-color: rgb(80, 0, 80);
+        color: white;
+        font-family: Arial, sans-serif, 'Nunito';
+        min-width: 100%;
+        height: auto;
+    }
+
+
+    /* HEADING AREA STARTS*/
+
+    h2,
+    h3 {
+        font: 1.2rem Arial;
+        font-weight: bolder;
+        margin: 30px, 40px;
+    }
+
+    /* HEADING AREA ENDS*/
+
+
+    /* TABLE AREA STARTS*/
+
+    table,
+    tr,
+    th,
+    td,
+    caption {
+        font-size: 1.5rem;
+        font-family: prompt;
+    }
+
+    /* NAV AREA STARTS*/
+
+    .home-link {
+        padding-left: 20px;
+    }
+
+    .home-link img {
+        height: 30px;
+        width: 30px;
+        margin-right: 10px;
+    }
+
+
+    .header-ul li a {
+        right: -10px;
+        padding: 0 3px;
+        font-size: 15px;
+    }
+
+
+    .header-ul li a ion-icon {
+        margin-inline: 5px;
+    }
+
+    /* NAV AREA ENDS*/
+
+
+    /* IMAGE AREA STARTS*/
+
+    .grid img {
+        max-width: 48%;
+    }
+
+
+    figcaption {
+        font-size: 20px;
+    }
+
+
+    /* IMAGE AREA ENDS*/
+
+
+    /*  ABOUT PARAGRAPH AREA STARTS */
+
+    .about img {
+        width: 300px;
+        margin: 10px 20px 10px;
+    }
+
+    /* ABOUT PARAGRAPH AREA ENDS*/
+
+    dl {
+        font: 22px prompt;
+    }
+
+
+
+
+
+    /* CONTACT INPUT STARTS*/
+    .contact-h2 {
+        font: 15px Arial;
+        font-weight: bolder;
+    }
+
+    .contact-container {
+        margin: 0 auto;
+    }
+
+    .thumb {
+        display: none;
+    }
+
+    #attract {
+        display: none;
+    }
+
+    .contact-container {
+        justify-content: center;
+    }
+
+    .contact-container form {
+        margin: 1rem;
+        width: calc(90%-60%);
+    }
+
+    .contact-form label {
+        padding-left: -90px;
+    }
+
+    .contact-form input {
+        padding: 0 20px;
+    }
+
+    ::placeholder {
+        font-size: 13px;
+    }
+
+
+    .simple {
+        font-size: 18px;
+        font-family: prompt;
+        padding: 15px 20px;
+    }
+
+    .simple ion-icon {
+        padding-left: 5px;
+        font-size: 16px;
+    }
+
+    /* LABEL INPUT ENDS*/
+
+
+    /* ADDRESS ENDS*/
+
+    address {
+        font: 22px cabin;
+    }
+
+    address ion-icon {
+        font-size: 40px;
+    }
+
+
+    .contact img {
+        display: none;
+    }
+
+    .contact a {
+        font-size: 20px;
+    }
+
+    .contact {
+        justify-content: center;
+    }
+
+    /* ADDRESS ENDS*/
+
+    /* FOOTER STARTS*/
+
+    .container {
+        max-width: 100vw;
+        margin: auto;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    footer {
+        background-color: #24262b;
+        padding: 30px 0;
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer p {
+        color: white;
+        text-align: center;
+    }
+
+
+    .footer-col {
+        width: 25%;
+    }
+
+    .footer-col h4 {
+        font-size: 18px;
+        color: white;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        margin-left: 15px;
+        max-width: 15vw;
+        font-weight: 700;
+        position: static;
+        background-color: red;
+    }
+
+    .footer-col ul li:last-child {
+        margin-bottom: -50px;
+    }
+
+    .footer-col ul li a {
+        font-size: 16px;
+        text-transform: capitalize;
+        color: white;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbb;
+        transition: all 0.3s ease;
+    }
+
+
+    footer a {
+        color: #fff;
+    }
+
+    .footer-col .social-links ion-icon {
+        margin-left: 10px;
+    }
+
+}
+
 @media screen and (max-width:750px) {
 
 
     html {
-        font-size: 11px;
+        font-size: 15px;
     }
 
     body {
@@ -595,7 +847,7 @@ footer a:visited {
 
     h2,
     h3 {
-        font-size: 1rem;
+        font-size: 2.3rem;
         margin: 10px 70px;
         text-align: center;
     }
@@ -611,12 +863,12 @@ footer a:visited {
     td,
     caption {
         border: 1px solid black;
-        font-size: 1.5rem;
+        font-size: 3rem;
     }
 
     table {
         text-align: center;
-        margin-left: 20rem;
+        margin: 0 auto;
     }
 
 
@@ -633,12 +885,12 @@ footer a:visited {
     }
 
     .home-link img {
-        height: 20px;
-        width: 20px;
+        height: 50px;
+        width: 50px;
     }
 
     .home-link span {
-        font-size: 10px;
+        font-size: 35px;
     }
 
     .header-nav {
@@ -659,15 +911,20 @@ footer a:visited {
     .header-ul li a {
         font-size: 28px;
         color: black;
+        top: 100px;
+        left: -90px;
+        padding: 0 100px;
     }
 
 
-    .header-ul li ion-icon {
-        font-size: 30px;
+    .header-ul li a ion-icon {
+        font-size: 50px;
+        color: #000;
     }
 
 
-    .open-menu-bar {
+    .open-menu-bar,
+    .close-menu-bar {
         color: #000;
     }
 
@@ -728,7 +985,7 @@ footer a:visited {
     /* IMAGE AREA STARTS*/
 
     .grid img {
-        max-width: 45%;
+        max-width: 49%;
         max-height: auto;
     }
 
@@ -767,7 +1024,9 @@ footer a:visited {
     }
 
     .about img {
-        max-width: 100%;
+        width: 690px;
+        margin: 15px auto;
+
     }
 
 
@@ -787,32 +1046,21 @@ footer a:visited {
     }
 
     .contact-container {
-        max-width: 100%;
-        max-height: auto;
-        margin: 1rem;
         justify-content: center;
-        margin-bottom: 50px;
     }
 
     .contact-container form {
-        margin: 2rem;
-        width: 60%;
-    }
-
-
-    .contact-form {
-        margin-bottom: 20px;
+        margin: 1rem;
+        width: calc(90%-60%);
     }
 
     .contact-form label {
-        line-height: 10px;
-        font-size: 15px;
+        padding-left: -90px;
     }
 
     .contact-form input {
-        font-size: 10px;
-        height: 30px;
-        top: -10px;
+        padding: 0 20px;
+        height: 40px;
     }
 
 
@@ -855,7 +1103,7 @@ footer a:visited {
     }
 
     .contact img {
-        display: none;
+        max-width: 0%;
     }
 
     .contact {
@@ -965,7 +1213,7 @@ footer a:visited {
 
     h2,
     h3 {
-        font-size: 1rem;
+        font-size: 1.7rem;
         margin: 10px 70px;
         text-align: center;
     }
@@ -981,12 +1229,12 @@ footer a:visited {
     td,
     caption {
         border: 1px solid black;
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
 
     table {
         text-align: center;
-        margin-left: 20rem;
+        margin: 0 auto;
     }
 
 
@@ -1003,12 +1251,12 @@ footer a:visited {
     }
 
     .home-link img {
-        height: 20px;
-        width: 20px;
+        height: 40px;
+        width: 40px;
     }
 
     .home-link span {
-        font-size: 10px;
+        font-size: 25px;
     }
 
     .header-nav {
@@ -1098,7 +1346,7 @@ footer a:visited {
     /* IMAGE AREA STARTS*/
 
     .grid img {
-        max-width: 45%;
+        max-width: 47%;
         max-height: auto;
     }
 
@@ -1153,40 +1401,30 @@ footer a:visited {
     }
 
     .contact-container {
-        max-width: 100%;
-        max-height: auto;
-        margin: 1rem;
         justify-content: center;
-        margin-bottom: 50px;
     }
 
     .contact-container form {
-        margin: 2rem;
-        width: 60%;
-    }
-
-
-    .contact-form {
-        margin-bottom: 30px;
+        margin: 1rem;
+        width: calc(90%-60%);
     }
 
     .contact-form label {
-        line-height: 10px;
-        font-size: 15px;
+        font-size: 17px;
+        padding-left: -90px;
     }
 
     .contact-form input {
-        font-size: 10px;
-        height: 25px;
+        padding: 0 20px;
+        height: 40px;
     }
 
-
     ::placeholder {
-        font-size: 10px;
+        font-size: 13px;
     }
 
     .package label {
-        font-size: 15px;
+        font-size: 17px;
     }
 
     .thumb {
@@ -1300,7 +1538,7 @@ footer a:visited {
 }
 
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:430px) {
 
 
 
@@ -1332,7 +1570,7 @@ footer a:visited {
 
     h2,
     h3 {
-        font-size: 1rem;
+        font-size: 1.5rem;
         margin: 10px 70px;
         text-align: center;
     }
@@ -1375,7 +1613,7 @@ footer a:visited {
     }
 
     .home-link span {
-        font-size: 9px;
+        font-size: px;
     }
 
     .header-nav {
@@ -1397,13 +1635,14 @@ footer a:visited {
     .header-ul li a {
         font-size: 25px;
         color: black;
-        margin-left: 20px;
+        left: 15px;
     }
 
 
 
     .header-ul li a ion-icon {
         font-size: 40px;
+        color: black;
     }
 
 
@@ -1468,7 +1707,7 @@ footer a:visited {
     /* IMAGE AREA STARTS*/
 
     .grid img {
-        max-width: 45%;
+        max-width: 49%;
         max-height: auto;
     }
 
@@ -1494,8 +1733,12 @@ footer a:visited {
     /*  ABOUT PARAGRAPH AREA STARTS */
 
 
+    .style {
+        font-size: 15px;
+    }
+
     .about {
-        padding:  15px 10px;
+        padding: 15px 10px;
         word-spacing: 5px;
         line-height: 2rem;
         font-weight: bold;
@@ -1521,36 +1764,403 @@ footer a:visited {
     }
 
     .contact-container {
-        max-width: 95%;
-        max-height: auto;
-        margin-left: 1rem;
-        justify-content: space-evenly;
-        margin-bottom: 50px;
+        justify-content: center;
     }
 
     .contact-container form {
-        margin: 2rem;
-        width: 60%;
+        margin: 4rem 0;
+        width: calc(90%-60%);
     }
 
-
     .contact-form {
-        line-height: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 14px;
     }
 
     .contact-form label {
-        line-height: 10px;
         font-size: 10px;
-        margin-right: 10px;
+        padding-left: -90px;
     }
 
     .contact-form input {
         font-size: 10px;
-        margin-left: 10px;
-        height: 15px;
+        top: -8px;
+        padding-left: 10px;
+        left: 20px;
+        height: 20px;
     }
 
+    ::placeholder {
+        font-size: 10px;
+        padding-left: 20px;
+    }
+
+    .package label {
+        font-size: 10px;
+    }
+
+    .thumb {
+        display: none;
+    }
+
+
+    .simple {
+        font-size: 13px;
+        padding: 8px 10px;
+        cursor: none;
+        bottom: 0;
+    }
+
+    .simple ion-icon {
+        padding-left: 4px;
+        font-size: 10px;
+    }
+
+    /* LABEL INPUT ENDS*/
+    address {
+        font-size: 13px;
+    }
+
+    address ion-icon {
+        color: red;
+    }
+
+    .contact {
+        font-size: 13px;
+    }
+
+    .contact a {
+        font-size: 13px;
+        margin: 0 10px;
+    }
+
+
+    /* FOOTER STARTS*/
+
+    .container {
+        max-width: 100vw;
+        margin: auto;
+    }
+
+
+    footer {
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer p {
+        font-size: 9px;
+    }
+
+    footer a {
+        font-size: 8px;
+    }
+
+    .footer-col {
+        width: 22%;
+        margin-left: 10px;
+    }
+
+    .footer-col h4 {
+        font-size: 10px;
+        margin-bottom: 20px;
+        margin-left: 15px;
+        max-width: 25vw;
+    }
+
+    .footer-col ul li a:hover {
+        display: none;
+    }
+
+    .footer-col .social-links a {
+        font-size: 15px;
+        display: block;
+        height: 30px;
+        margin-right: 90px;
+    }
+
+    .footer-col .social-links a:hover {
+        display: none;
+    }
+
+
+
+    .footer-col ul li a {
+        font-size: 10px;
+        transition: none;
+        flex-wrap: wrap;
+    }
+
+
+    .footer-col ul li a:hover {
+        display: none;
+    }
+
+
+    .footer-col .social-links a:active {
+        display: none;
+    }
+
+    /* FOOTER ENDS*/
+
+    .product {
+        line-height: 2rem;
+        margin: 5rem;
+    }
+
+}
+
+
+/* MEDIA  QUERY ENDS */
+
+@media screen and (max-width:400px) {
+
+
+
+    html {
+        font-size: 11px;
+    }
+
+    body {
+        max-width: 100%;
+        max-height: auto;
+    }
+
+
+    /* HEADING AREA STARTS*/
+
+
+    html {
+        font-size: 11px;
+    }
+
+    body {
+        max-width: 100%;
+        max-height: auto;
+    }
+
+
+    /* HEADING AREA STARTS*/
+
+
+    h2,
+    h3 {
+        font-size: 1.5rem;
+        margin: 10px 70px;
+        text-align: center;
+    }
+
+    /* HEADING AREA ENDS*/
+
+
+    /* TABLE AREA STARTS*/
+
+    table,
+    tr,
+    th,
+    td,
+    caption {
+        border: 1px solid black;
+        font-size: 1.5rem;
+    }
+
+    table {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+
+
+    /* TABLE AREA ENDS*/
+
+    /* NAV AREA STARTS*/
+
+
+    .home-link {
+        margin-right: auto;
+        padding-left: 40px;
+        align-items: center;
+    }
+
+    .home-link img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .home-link span {
+        font-size: px;
+    }
+
+    .header-nav {
+        max-width: 100%;
+        height: 60px;
+    }
+
+    .header-ul {
+        display: block;
+        margin-top: 100px;
+    }
+
+    .header-ul li {
+        display: block;
+        border-bottom: 1px solid black;
+        margin-bottom: 50px;
+    }
+
+    .header-ul li a {
+        font-size: 25px;
+        color: black;
+        left: 15px;
+    }
+
+
+
+    .header-ul li a ion-icon {
+        font-size: 40px;
+        color: black;
+    }
+
+
+    .open-menu-bar {
+        color: #000;
+    }
+
+    .open-menu-bar,
+    .close-menu-bar {
+        font-size: 30px;
+        padding: 20px;
+        display: block;
+    }
+
+    #sidebar-active:checked~.links-container {
+        right: 0;
+    }
+
+
+    #sidebar-active:checked~#overlay {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+
+
+    .links-container {
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 70%;
+        height: 100%;
+        backdrop-filter: blur(5px);
+        background-color: rgba(255, 255, 255, 0.445);
+        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.253);
+        transition: all 0.75s ease-in-out;
+    }
+
+
+
+    .hero {
+        display: none;
+    }
+
+    /*NAV AREA ENDS*/
+
+    /* LINK AREA STARTS*/
+
+    a {
+        color: #185375;
+    }
+
+    /* LINK AREA ENDS*/
+
+
+    /* IMAGE AREA STARTS*/
+
+    .grid img {
+        max-width: 49%;
+        max-height: auto;
+    }
+
+    .grid {
+        margin: 15px 10px;
+    }
+
+    figcaption {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+
+    /* IMAGE AREA ENDS*/
+
+    /* DETAILS ENDS*/
+    details {
+        margin: 2rem;
+    }
+
+    /* DETAILS ENDS*/
+
+    /*  ABOUT PARAGRAPH AREA STARTS */
+
+    .style {
+        font-size: 14px;
+    }
+
+    .about {
+        padding: 15px 10px;
+        word-spacing: 5px;
+        line-height: 2rem;
+        font-weight: bold;
+    }
+
+    .about p {
+        font-size: 12px;
+    }
+
+
+    /* ABOUT PARAGRAPH AREA ENDS*/
+
+    dl {
+        margin: 2rem;
+        line-height: 1rem;
+        font: 22px sans-serif;
+    }
+
+
+    /* CONTACT INPUT STARTS*/
+    .contact-h2 {
+        display: none;
+    }
+
+    .contact-container {
+        justify-content: center;
+    }
+
+    .contact-container form {
+        margin: 4rem 0;
+        width: calc(90%-60%);
+    }
+
+    .contact-form {
+        margin-bottom: 14px;
+    }
+
+    .contact-form label {
+        font-size: 10px;
+        padding-left: -90px;
+    }
+
+    .contact-form input {
+        font-size: 10px;
+        top: -8px;
+        padding-left: 10px;
+        left: 20px;
+        height: 15px;
+    }
 
     ::placeholder {
         font-size: 10px;
@@ -1669,6 +2279,7 @@ footer a:visited {
     }
 
 }
+
 
 
 /* MEDIA  QUERY ENDS */
