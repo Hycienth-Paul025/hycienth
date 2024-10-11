@@ -1621,14 +1621,14 @@ footer a:visited {
 
     .header-ul li {
         display: block;
-        border-bottom: 1px solid black;
         margin-bottom: 50px;
     }
 
     .header-ul li a {
         font-size: 25px;
         color: black;
-        left: 15px;
+        left: -100px;
+        top: -10px;
     }
 
 
@@ -1995,14 +1995,14 @@ footer a:visited {
 
     .header-ul li {
         display: block;
-        border-bottom: 1px solid black;
         margin-bottom: 50px;
     }
 
     .header-ul li a {
         font-size: 25px;
         color: black;
-        left: 15px;
+        left: -100px;
+        top: -10px;
     }
 
 
