@@ -884,7 +884,7 @@ footer a:visited {
         font: 18px prompt;
     }
 
-     /* ORDER LINK ENDS*/
+    /* ORDER LINK ENDS*/
 
     /*BANNER STARTS*/
 
@@ -1233,7 +1233,7 @@ footer a:visited {
         font: 18px prompt;
     }
 
-     /* ORDER LINK ENDS*/
+    /* ORDER LINK ENDS*/
 
     /* IMAGE AREA STARTS*/
 
@@ -1585,7 +1585,7 @@ footer a:visited {
         margin-right: 3px;
     }
 
-     /* ORDER LINK ENDS*/
+    /* ORDER LINK ENDS*/
     /* IMAGE AREA STARTS*/
 
     .grid img {
@@ -1984,7 +1984,7 @@ footer a:visited {
         font: 10px prompt;
     }
 
-     /* ORDER LINK ENDS*/
+    /* ORDER LINK ENDS*/
 
     /* VIDEO AREA STARTS*/
 
@@ -2008,7 +2008,7 @@ footer a:visited {
     }
 
     .background-image p {
-        font: 8px cabin;
+        font: 6px cabin;
         text-align: justify;
         line-height: 10px;
         top: 38px;
@@ -2363,8 +2363,8 @@ footer a:visited {
 
     .background-image h1 {
         font: 9px prompt;
-       margin-bottom: -95px;
-       top: -10px;
+        margin-bottom: -95px;
+        top: -10px;
     }
 
     .text-container {
@@ -2374,7 +2374,7 @@ footer a:visited {
     }
 
     .background-image p {
-        font: 7.2px cabin;
+        font: 6px cabin;
         text-align: justify;
         line-height: 10px;
     }
