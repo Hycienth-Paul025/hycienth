@@ -42,4 +42,3 @@ function showText() {
 showText();
 
 
-  

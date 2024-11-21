@@ -84,7 +84,7 @@ document.getElementById("contactForm").addEventListener("submit", function (even
   if (isFormValid) {
     emailjs.sendForm("service_e5qzot8", "template_xettf8k", this)
       .then(() => {
-        window.location.href =  /* 'https://web3forms.com/success' */  'success.html' ; 
+        window.location.href =  /* 'https://web3forms.com/success' */  'success.html';
         /*  alert("Form submitted successfully!"); */
         document.getElementById("contactForm").reset(); // Clear the form
       })

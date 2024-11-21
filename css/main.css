@@ -696,7 +696,7 @@ small.error {
         border-radius: 5px;
     }
 
-    .contact-container form h2{
+    .contact-container form h2 {
         position: relative;
         top: -9px;
     }
@@ -788,17 +788,18 @@ small.error {
         height: 130vh;
     }
 
-    .contact-container{
+    .contact-container {
         top: 20px;
         height: 580px;
     }
+
     /*  CONTACT FORM START*/
 
     .contact-left {
         display: none;
     }
 
-   .contact-container form h2 {
+    .contact-container form h2 {
         font: 12.5px "noto serif";
         font-weight: 600;
         position: relative;
