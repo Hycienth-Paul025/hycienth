@@ -2054,7 +2054,7 @@ footer a:visited {
         padding: 15px 10px;
         word-spacing: 5px;
         line-height: 2rem;
-        font-weight: bold;
+        font-weight: normal;
     }
 
     .about p {
@@ -2175,6 +2175,7 @@ footer a:visited {
 
     html {
         font-size: 11px;
+        font-weight: normal;
     }
 
     body {
@@ -2418,7 +2419,6 @@ footer a:visited {
         padding: 15px 10px;
         word-spacing: 5px;
         line-height: 2rem;
-        font-weight: bold;
     }
 
     .about p {

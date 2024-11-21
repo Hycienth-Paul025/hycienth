@@ -674,13 +674,13 @@ small.error {
     /* ORDER LINK ENDS*/
 
     .background-blur {
-        height: 130vh;
+        height:  100%;
     }
 
     /*  CONTACT FORM START*/
 
     .contact-container {
-        top: 25px;
+        top: 95px;
         height: 570px;
     }
 
@@ -785,7 +785,7 @@ small.error {
     /* ORDER LINK ENDS*/
 
     .background-blur {
-        height: 130vh;
+        max-height: 100%;
     }
 
     .contact-container {
