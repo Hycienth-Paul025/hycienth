@@ -674,13 +674,14 @@ small.error {
     /* ORDER LINK ENDS*/
 
     .background-blur {
-        height: 170vh;
+        height: 130vh;
     }
 
     /*  CONTACT FORM START*/
 
     .contact-container {
         top: 25px;
+        height: 570px;
     }
 
     /* CONTACT LEFT STARRTS */
@@ -691,9 +692,18 @@ small.error {
 
     .contact-container form {
         width: 90%;
+        height: 570px;
+        border-radius: 5px;
+    }
+
+    .contact-container form h2{
+        position: relative;
+        top: -9px;
     }
 
     .contact-form {
+        position: relative;
+        top: -10px;
         margin-bottom: 13px;
     }
 
@@ -775,22 +785,29 @@ small.error {
     /* ORDER LINK ENDS*/
 
     .background-blur {
-        height: 170vh;
+        height: 130vh;
     }
 
+    .contact-container{
+        top: 20px;
+        height: 580px;
+    }
     /*  CONTACT FORM START*/
 
     .contact-left {
         display: none;
     }
 
-    h2 {
+   .contact-container form h2 {
         font: 12.5px "noto serif";
         font-weight: 600;
+        position: relative;
+        top: 5px;
     }
 
     .contact-container form {
         width: 90%;
+        height: 547px;
     }
 
     .contact-form {
