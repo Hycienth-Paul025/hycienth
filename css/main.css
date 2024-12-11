@@ -37,7 +37,7 @@
     left: -50%;
     width: 200%;
     height: 200%;
-    background: linear-gradient(45deg, #ff0000, #ff7b00, #ffff00, #00ff00, #00ffff, #0000ff, #8b00ff, #ff00ff);
+    background: linear-gradient(50deg, #ff0d0d, #ff7b00, #ffff00, #00ff00, #00ffff, #1270e2, #ddd, #8b00ff, #ff00ff);
     background-size: 400% 400%;
     z-index: -1;
     filter: blur(15px);
@@ -102,7 +102,7 @@
 
 .contact-left span {
     color: #000;
-    background: linear-gradient(transparent, #fdc200de, #fdc200f5), url(../img/bg-2.jpg);
+    background: linear-gradient(transparent, #8a9fd89a, #8a9fd8), url(../img/bg-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 15px 0 0 15px;
@@ -116,6 +116,7 @@
     position: relative;
     top: 100px;
     text-align: center;
+    color: #df3627;
 }
 
 .contact-left span p {
@@ -126,6 +127,7 @@
     font: 15px 'cabin';
     padding: 0 10px;
     line-height: 25px;
+    color: #141313;
 }
 
 /* CONTACT LEFT ENDS */
@@ -135,7 +137,7 @@ form {
     border-radius: 0 8px 8px 0;
     width: 59%;
     height: 760px;
-    background-color: #3aa176;
+    background-color: #040227;
 }
 
 h2 {
@@ -174,7 +176,7 @@ label {
     background-color: transparent;
 }
 
-::placeholder{
+::placeholder {
     color: #06f3ac;
     text-align: center;
 }
@@ -250,13 +252,14 @@ small.error {
     top: -50px;
     font: 24px arial;
     color: #333;
-    left: 430px;
+    text-align: center;
 }
 
 .notify {
+    display: flex;
+    justify-self: center;
     position: relative;
-    left: 550px;
-    top: -60px;
+    top: -55px;
     font: 24px Arial;
     color: #333;
 }

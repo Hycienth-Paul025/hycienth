@@ -3,6 +3,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -15,8 +17,8 @@ html {
 }
 
 body {
-    background-color: seagreen;
-    color: white;
+    background-color: #7ebcf3;
+    color: #3f3f3f;
     font-family: Arial, sans-serif, 'Nunito';
     min-width: 100%;
     height: auto;
@@ -27,10 +29,10 @@ body {
 
 h2,
 h3 {
-    color: #f7a308;
+    color: #222;
     font: 1.5rem 'prompt';
     text-transform: uppercase;
-    margin: 30px 60px;
+    margin: 30px 40px 20px;
     font-weight: bolder;
 }
 
@@ -47,44 +49,63 @@ h3 {
 }
 
 .banner {
-    background-image: linear-gradient(to top, #000000cc, transparent, #000000cc), url(../img/back.pix.jpg);
+    background-image: linear-gradient(to top, #000000, transparent, #000000), url(../img/back.pix.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     height: 100vh;
-    border-bottom: 3px solid #b4f0afa9;
-    border-radius: 5px;
+    text-align: center;
+    margin-top: -50px;
+}
+
+.banner h2 {
+    position: relative;
+    bottom: -200px;
+    font-size: 2pc;
+    font-family: prompt;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #ecfc0a;
+}
+
+.banner p {
+    font-size: 17px;
+    font-family: 'Poppins' sans-serif;
+    position: relative;
+    bottom: -180px;
+    color: #ecfc0a;
 }
 
 .banner button {
-    display: flex;
+    display: block;
     margin: 0 auto;
-    position: relative;
-    top: 430px;
+    margin-top: 300px;
     background-color: transparent;
     color: white;
     border: 3px solid whitesmoke;
     font: 26px cabin;
     font-weight: 600;
     letter-spacing: 2.5px;
-    padding: 30px 80px;
+    padding: 20px 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px black;
     transition: .75s ease;
+    cursor: pointer;
 }
 
 .banner button:hover {
     background-color: #80808054;
 }
 
-.banner button ion-icon {
-    font-size: 33px;
-    padding-right: 20px;
-}
 
 /* BANNER ENDS*/
 
+.style{
+    color: #222;
+    font-weight: 700;
+    padding-left: 40px;
+}
 
 /* TABLE AREA STARTS*/
 
@@ -95,15 +116,17 @@ td,
 caption {
     border: 2px solid black;
     border-collapse: collapse;
+    border-color: #aaa;
     font-size: 2rem;
     font-family: sans-serif;
 }
 
 table {
-    background: forestgreen;
-    color: #000;
+    background: #185375;
+    color: #fff;
     text-align: center;
     margin: 0 auto;
+    box-shadow: -5px 5px 30px -10px #222;
 }
 
 td {
@@ -111,7 +134,7 @@ td {
 }
 
 caption {
-    background: #fc0;
+    background: #185375;
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
 
@@ -138,9 +161,11 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
+    background: #185375;
 }
 
 .home-link {
+    display: flex;
     margin-right: auto;
     padding-left: 40px;
     align-items: center;
@@ -157,7 +182,7 @@ header {
     font-size: 18px;
     font-family: prompt;
     font-weight: bolder;
-    color: #000;
+    color: #f1efef;
     text-transform: uppercase;
     flex-wrap: wrap;
     align-self: center;
@@ -170,20 +195,18 @@ header {
 .header-nav {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    background-color: #43b800;
+    justify-content: space-between;
     font-weight: bold;
     box-shadow: 0 6px 5px -5px black;
     align-items: center;
+    padding: 20px 5%;
 }
-
 
 .header-ul {
     list-style-type: none;
     display: flex;
     align-items: center;
-    gap: 1rem;
-    padding: 0.25rem 10px;
+    gap: 10px;
 }
 
 .header-ul li {
@@ -193,19 +216,26 @@ header {
 }
 
 .header-ul li a {
-    position: relative;
-    right: 100px;
-    padding: 0 20px;
-    font-size: 14px;
-    color: black;
-    text-transform: uppercase;
+    font-size: 18px;
+    color: white;
+    padding: 0 10px;
+    transition: color 0.4s ease, border-bottom 0.4s ease;
 }
 
 
 .header-ul li a ion-icon {
-    color: #000;
+    color: #fff;
     font-size: 20px;
     margin-inline: 10px;
+}
+
+.header-ul li a.active {
+    border-bottom: 2px solid white;
+}
+
+
+.header-ul li a:hover {
+    color: #74b7ff;
 }
 
 /* ORDER LINK STARTS  */
@@ -367,6 +397,7 @@ a:focus {
     font: 17px Arial;
     padding: 0.6rem 0.8rem;
     line-height: 1.5rem;
+    color: whitesmoke;
 }
 
 .transition-text {
@@ -395,7 +426,7 @@ figcaption {
     text-align: center;
     font-weight: 800;
     margin: 0 0 3rem;
-    color: #00ff15;
+    color: #333;
 }
 
 
@@ -419,7 +450,7 @@ figcaption {
 }
 
 .about a {
-    color: #2bff00;
+    color: #333;
     text-decoration: underline;
 }
 
@@ -490,8 +521,59 @@ address ion-icon {
 
 
 /* DETAILS ENDS*/
-details {
-    margin: 3rem;
+aside {
+    margin-left: 1.5rem;
+    margin-top: -2rem;
+}
+
+aside h3 {
+    font-size: 28px;
+    font-family: "noto serif";
+    margin-bottom: 20px;
+}
+
+aside .trivia {
+    font: 20px poppins;
+    font-weight: 650;
+    margin-bottom: 30px;
+    padding-left: 30px;
+}
+
+
+details .about img {
+    max-width: 400px;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+
+details .about {
+    display: block;
+    font: 15px cabin;
+    margin-bottom: 50px;
+}
+
+details p {
+    position: relative;
+    top: -70px;
+    background: #f9f9f9;
+    width: 60pc;
+    height: 19pc;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+details .about a {
+    color: #005cd4;
+}
+
+summary {
+    font: 15px poppins;
+    width: 15%;
+    font-weight: 600;
+    color: #005cd4;
+    cursor: pointer;
+    margin-bottom: 100px;
+    padding-left: 30px;
 }
 
 /* DETAILS ENDS*/
@@ -559,6 +641,7 @@ footer p {
 
 footer a {
     margin: 0 1rem;
+    color: #ddd;
 }
 
 footer a:visited {
@@ -900,15 +983,6 @@ footer a:visited {
         padding: 10px 28px;
     }
 
-    .banner button:hover {
-        background-color: #80808054;
-    }
-
-    .banner button ion-icon {
-        font-size: 28px;
-        padding-right: 10px;
-    }
-
     /* BANNER ENDS*/
 
 
@@ -1092,7 +1166,6 @@ footer a:visited {
     th,
     td,
     caption {
-        border: 1px solid black;
         font-size: 3rem;
     }
 
@@ -1134,22 +1207,25 @@ footer a:visited {
 
     .header-ul li {
         display: block;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
         margin-left: 50px;
     }
 
     .header-ul li a {
-        font-size: 28px;
+        font-size: 24px;
         color: black;
-        top: 100px;
+        top: 150px;
         left: -90px;
-        padding: 0 100px;
+        margin-left: 100px;
+    }
+
+    .header-ul li .active {
+        display: none;
     }
 
 
     .header-ul li a ion-icon {
-        font-size: 50px;
-        color: #000;
+        display: none;
     }
 
 
@@ -1187,8 +1263,8 @@ footer a:visited {
         top: 0;
         right: -100%;
         z-index: 10;
-        width: 70%;
-        height: 100%;
+        width: 60%;
+        height: 350px;
         backdrop-filter: blur(5px);
         background-color: rgba(255, 255, 255, 0.445);
         box-shadow: -5px 0 5px rgba(0, 0, 0, 0.253);
@@ -1213,15 +1289,18 @@ footer a:visited {
         margin-bottom: 40px;
     }
 
+    .banner h2{
+        font-size: 15px;
+    }
+
+    .banner p{
+        font-size: 17px;
+        margin-top: 3pc;
+    }
 
     .banner button {
         top: 360px;
         padding: 13px 25px;
-    }
-
-    .banner button ion-icon {
-        font-size: 25px;
-        padding-right: 10px;
     }
 
     /* BANNER ENDS*/
@@ -1503,13 +1582,8 @@ footer a:visited {
 
     .header-ul li {
         display: block;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
         margin-left: 50px;
-    }
-
-    .header-ul li a {
-        font-size: 28px;
-        color: black;
     }
 
 
@@ -1543,7 +1617,7 @@ footer a:visited {
         z-index: 9;
     }
 
-
+    
     .links-container {
         flex-direction: column;
         align-items: flex-start;
@@ -1551,8 +1625,8 @@ footer a:visited {
         top: 0;
         right: -100%;
         z-index: 10;
-        width: 70%;
-        height: 100%;
+        width: 60%;
+        height: 42%;
         backdrop-filter: blur(5px);
         background-color: rgba(255, 255, 255, 0.445);
         box-shadow: -5px 0 5px rgba(0, 0, 0, 0.253);
@@ -1632,11 +1706,6 @@ footer a:visited {
     }
 
 
-    .banner button ion-icon {
-        font-size: 25px;
-        padding-right: 20px;
-    }
-
     /* BANNER ENDS*/
 
 
@@ -1667,13 +1736,14 @@ footer a:visited {
 
     /* VIDEO AREA ENDS*/
 
-    /* DETAILS STARTS*/
 
-    details {
-        margin: 2rem;
+    /* DETAILS ENDS*/
+    aside {
+        display: none;
     }
 
     /* DETAILS ENDS*/
+
 
     /*  ABOUT PARAGRAPH AREA STARTS */
 
@@ -1880,17 +1950,13 @@ footer a:visited {
 
     .header-ul li {
         display: block;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
     }
 
     .header-ul li a {
-        font-size: 25px;
-        color: black;
-        left: -100px;
-        top: -10px;
+        font-size: 20px;
+        top: 20px;
     }
-
-
 
     .header-ul li a ion-icon {
         font-size: 40px;
@@ -1931,8 +1997,8 @@ footer a:visited {
         top: 0;
         right: -100%;
         z-index: 10;
-        width: 70%;
-        height: 100%;
+        width: 60%;
+        height: 37%;
         backdrop-filter: blur(5px);
         background-color: rgba(255, 255, 255, 0.445);
         box-shadow: -5px 0 5px rgba(0, 0, 0, 0.253);
@@ -1969,11 +2035,6 @@ footer a:visited {
         padding: 10px 20px;
     }
 
-
-    .banner button ion-icon {
-        font-size: 20px;
-        padding-right: 20px;
-    }
 
     /* BANNER ENDS*/
 
@@ -2048,6 +2109,7 @@ footer a:visited {
 
     .style {
         font-size: 15px;
+
     }
 
     .about {
@@ -2260,14 +2322,14 @@ footer a:visited {
 
     .header-ul li {
         display: block;
-        margin-bottom: 50px;
     }
+
 
     .header-ul li a {
         font-size: 25px;
         color: black;
         left: -100px;
-        top: -10px;
+        top: 10px;
     }
 
 
@@ -2275,7 +2337,7 @@ footer a:visited {
     .header-ul li a ion-icon {
         font-size: 40px;
         color: black;
-    }
+    } 
 
 
     .open-menu-bar {
@@ -2303,7 +2365,7 @@ footer a:visited {
         z-index: 9;
     }
 
-
+    
     .links-container {
         flex-direction: column;
         align-items: flex-start;
@@ -2311,8 +2373,8 @@ footer a:visited {
         top: 0;
         right: -100%;
         z-index: 10;
-        width: 70%;
-        height: 100%;
+        width: 60%;
+        height: 37%;
         backdrop-filter: blur(5px);
         background-color: rgba(255, 255, 255, 0.445);
         box-shadow: -5px 0 5px rgba(0, 0, 0, 0.253);
@@ -2346,11 +2408,6 @@ footer a:visited {
         top: 370px;
         font: 16px cabin;
         padding: 10px 20px;
-    }
-
-    .banner button ion-icon {
-        font-size: 19px;
-        padding-right: 20px;
     }
 
     /* BANNER ENDS*/
@@ -2411,8 +2468,11 @@ footer a:visited {
 
     /*  ABOUT PARAGRAPH AREA STARTS */
 
-    .style {
-        font-size: 14px;
+     .sty {
+        font: 14px poppins;
+        font-weight: 650;
+        color: red;
+        background-color: #00ff00;
     }
 
     .about {
@@ -2531,7 +2591,5 @@ footer a:visited {
     }
 
 }
-
-
 
 /* MEDIA  QUERY ENDS */
