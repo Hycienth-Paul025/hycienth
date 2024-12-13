@@ -2342,11 +2342,6 @@ footer a:visited {
     /* LINK AREA ENDS*/
 
     /*BANNER STARTS*/
-
-    .banner{
-        background-position: left;
-    }
-
     .banner button {
         top: 370px;
         font: 16px cabin;
