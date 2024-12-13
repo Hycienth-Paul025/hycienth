@@ -229,54 +229,58 @@ small.error {
 
 /*  CONTACT FORM ENDS*/
 
+
 /* TOASTER STARTS */
 .main-toast {
-    background-color: #c6ebeb;
-}
-
-.toast-icon {
+    background-color: #000429;
     display: flex;
-    margin: 0 auto;
-    font-size: 350px;
-    color: #006905;
+    justify-content: center;
+    margin-top: 100px;
 }
 
-.toast {
-    color: #006905;
-    font: 30px arial;
-}
-
-
-.notice {
-    position: relative;
-    top: -50px;
-    font: 24px arial;
-    color: #333;
+main ion-icon {
+    margin-left: 140px;
+    font-size: 200px;
     text-align: center;
+    color: #2bff00;
 }
 
-.notify {
+main .toast {
+    font: 30px prompt;
+    color: #2bff00;
+    font-weight: 500;
+    margin-bottom: -40px;
+}
+
+.notify,
+.notice {
     display: flex;
-    justify-self: center;
-    position: relative;
-    top: -55px;
-    font: 24px Arial;
-    color: #333;
+    justify-content: center;
+    font: 19px arial;
+    color: #ddd;
+    font-weight: 500;
+    padding: 6px 0;
+}
+
+.go-back-btn {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
 }
 
 .go-back-btn button {
     background-color: transparent;
-    color: #0e58ad;
-    display: flex;
-    margin: 0 auto;
+    font-weight: 800;
     border: 0;
-    font: 22px arial;
-    font-weight: 600;
-    margin-top: -39px;
-}
+    color: #009dff;
+    font-size: 15px;
+    font-family: cabin;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}   
 
-.go-back-btn button:hover {
-    text-decoration: underline;
+.go-back-btn button:hover{
+    color: #6bc6ff;
 }
 
 /* TOASTER ENDS */
@@ -338,47 +342,6 @@ small.error {
     }
 
     /*  CONTACT FORM ENDS*/
-
-
-    /* TOASTER STARTS */
-
-    .toast-icon {
-        display: flex;
-        margin: 0 auto;
-        font-size: 250px;
-        color: #006905;
-        margin-bottom: 30px;
-    }
-
-    .toast {
-        color: #006905;
-        font: 20px arial;
-    }
-
-
-    .notice {
-        top: -50px;
-        font: 20px arial;
-        color: #333;
-        left: 260px;
-    }
-
-    .notify {
-        left: 330px;
-        top: -60px;
-        font: 20px Arial;
-        color: #333;
-    }
-
-    .go-back-btn button {
-        font: 18px arial;
-        font-weight: 600;
-        margin-top: -59px;
-        position: relative;
-        left: 470px;
-    }
-
-    /* TOASTER ENDS */
 
 }
 
@@ -452,42 +415,6 @@ small.error {
     }
 
     /*  CONTACT FORM ENDS*/
-
-
-    /* TOASTER STARTS */
-
-    .toast-icon {
-        display: flex;
-        margin: 0 auto;
-        font-size: 250px;
-        margin-bottom: 30px;
-    }
-
-    .toast {
-        font: 20px arial;
-    }
-
-
-    .notice {
-        top: -50px;
-        font: 20px arial;
-        left: 120px;
-    }
-
-    .notify {
-        left: 200px;
-        top: -60px;
-        font: 20px Arial;
-    }
-
-    .go-back-btn button {
-        font: 18px arial;
-        font-weight: 600;
-        margin-top: -59px;
-        left: 340px;
-    }
-
-    /* TOASTER ENDS */
 
 }
 
@@ -742,41 +669,27 @@ small.error {
         font-weight: 600;
     }
 
+
     /*  CONTACT FORM ENDS*/
 
-    /* TOASTER STARTS */
 
-    .toast-icon {
-        display: flex;
-        margin: 0 auto;
-        font-size: 200px;
-        margin-bottom: 20px;
-    }
+/* TOASTER STARTS */
 
-    .toast {
-        font: 17px arial;
-    }
+main .toast {
+    font: 20px prompt;
+}
 
+.notify,
+.notice {
+    font: 15px arial;
+}
 
-    .notice {
-        top: -50px;
-        font: 15px arial;
-        left: 24px;
-    }
+.go-back-btn button {
+    margin: -10px  0;
+}
 
-    .notify {
-        left: 80px;
-        top: -60px;
-        font: 15px Arial;
-    }
+/* TOASTER ENDS */
 
-    .go-back-btn button {
-        font-weight: 600;
-        left: 178px;
-        font-size: 15px;
-    }
-
-    /* TOASTER ENDS */
 
 }
 
@@ -846,38 +759,24 @@ small.error {
 
     /*  CONTACT FORM ENDS*/
 
-    /* TOASTER STARTS */
+    
+/* TOASTER STARTS */
 
-    .toast-icon {
-        display: flex;
-        margin: 0 auto;
-        font-size: 200px;
-        margin-bottom: 10px;
-    }
+main .toast {
+    font: 20px prompt;
+}
 
-    .toast {
-        font: 17px arial;
-    }
+.notify,
+.notice {
+    font: 14px arial;
+}
 
 
-    .notice {
-        top: -50px;
-        font: 13px arial;
-        left: 30px;
-    }
+.go-back-btn button {
+    font-size: 19px;
+    margin-top: -10px;
+}
 
-    .notify {
-        left: 80px;
-        top: -60px;
-        font: 13px Arial;
-    }
-
-    .go-back-btn button {
-        font-weight: 600;
-        left: 164px;
-        font-size: 14px;
-    }
-
-    /* TOASTER ENDS */
+/* TOASTER ENDS */
 
 }

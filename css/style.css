@@ -101,7 +101,7 @@ h3 {
 
 /* BANNER ENDS*/
 
-.style{
+.style {
     color: #222;
     font-weight: 700;
     padding-left: 40px;
@@ -686,11 +686,8 @@ footer a:visited {
 
     h2,
     h3 {
-        color: #f7a308;
         font: 1.5rem 'prompt';
-        text-transform: uppercase;
         margin: 30px 60px;
-        font-weight: bolder;
     }
 
     /* HEADING AREA ENDS*/
@@ -1141,8 +1138,7 @@ footer a:visited {
     }
 
     body {
-        max-width: 100%;
-        max-height: auto;
+        width: 100%;
     }
 
 
@@ -1228,8 +1224,10 @@ footer a:visited {
         display: none;
     }
 
+    .open-menu-bar{
+        color: #ddd;
+    }
 
-    .open-menu-bar,
     .close-menu-bar {
         color: #000;
     }
@@ -1271,6 +1269,12 @@ footer a:visited {
         transition: all 0.75s ease-in-out;
     }
 
+    /* ORDER LINK STARTS */
+    .order-link {
+        margin-right: 10px;
+    }
+
+    /* ORDER LINK ENDS */
 
 
     .hero-h2 {
@@ -1284,16 +1288,14 @@ footer a:visited {
 
     .banner-container {
         max-width: 100%;
-        max-height: 100%;
-        top: 10px;
         margin-bottom: 40px;
     }
 
-    .banner h2{
+    .banner h2 {
         font-size: 15px;
     }
 
-    .banner p{
+    .banner p {
         font-size: 17px;
         margin-top: 3pc;
     }
@@ -1307,10 +1309,6 @@ footer a:visited {
 
     /* ORDER LINK START*/
 
-    .order-link button {
-        padding: 13px 25px;
-        font: 18px prompt;
-    }
 
     /* ORDER LINK ENDS*/
 
@@ -1410,9 +1408,6 @@ footer a:visited {
         font-size: 13px;
     }
 
-    address ion-icon {
-        color: red;
-    }
 
     .contact img {
         max-width: 0%;
@@ -1540,7 +1535,6 @@ footer a:visited {
     th,
     td,
     caption {
-        border: 1px solid black;
         font-size: 2.5rem;
     }
 
@@ -1591,9 +1585,8 @@ footer a:visited {
         font-size: 30px;
     }
 
-
-    .open-menu-bar {
-        color: #000;
+    .open-menu-bar{
+        color:#ddd;
     }
 
     .open-menu-bar,
@@ -1617,7 +1610,7 @@ footer a:visited {
         z-index: 9;
     }
 
-    
+
     .links-container {
         flex-direction: column;
         align-items: flex-start;
@@ -1859,7 +1852,6 @@ footer a:visited {
 
 }
 
-
 @media screen and (max-width:430px) {
 
 
@@ -1880,11 +1872,11 @@ footer a:visited {
     html {
         font-size: 11px;
     }
-
+/* 
     body {
-        max-width: 100%;
+        width: 100%;
         max-height: auto;
-    }
+    } */
 
 
     /* HEADING AREA STARTS*/
@@ -1907,7 +1899,6 @@ footer a:visited {
     th,
     td,
     caption {
-        border: 1px solid black;
         font-size: 1.5rem;
     }
 
@@ -1939,7 +1930,7 @@ footer a:visited {
     }
 
     .header-nav {
-        max-width: 100%;
+        width: 100%;
         height: 60px;
     }
 
@@ -1964,9 +1955,6 @@ footer a:visited {
     }
 
 
-    .open-menu-bar {
-        color: #000;
-    }
 
     .open-menu-bar,
     .close-menu-bar {
@@ -2015,26 +2003,18 @@ footer a:visited {
 
     /* LINK AREA STARTS*/
 
-    a {
-        color: #185375;
-    }
 
     /* LINK AREA ENDS*/
 
 
     /*BANNER STARTS*/
 
+/* 
     .banner-container {
         max-width: 100%;
         max-height: 100%;
     }
-
-    .banner button {
-        font-size: 18px;
-        top: 380px;
-        padding: 10px 20px;
-    }
-
+ */
 
     /* BANNER ENDS*/
 
@@ -2241,8 +2221,7 @@ footer a:visited {
     }
 
     body {
-        max-width: 100%;
-        max-height: auto;
+        width: 100%;
     }
 
 
@@ -2254,43 +2233,11 @@ footer a:visited {
     }
 
     body {
-        max-width: 100%;
-        max-height: auto;
-    }
-
-
-    /* HEADING AREA STARTS*/
-
-
-    h2,
-    h3 {
-        font-size: 1.2rem;
-        margin: 10px 70px;
-        text-align: center;
-    }
-
-    /* HEADING AREA ENDS*/
-
-
-    /* TABLE AREA STARTS*/
-
-    table,
-    tr,
-    th,
-    td,
-    caption {
-        border: 1px solid black;
-        font-size: 1.5rem;
-    }
-
-    table {
-        text-align: center;
-        margin: 0 auto;
+        width: 100%;
     }
 
 
 
-    /* TABLE AREA ENDS*/
 
     /* NAV AREA STARTS*/
 
@@ -2311,7 +2258,7 @@ footer a:visited {
     }
 
     .header-nav {
-        max-width: 100%;
+        width: 100%;
         height: 60px;
     }
 
@@ -2327,7 +2274,6 @@ footer a:visited {
 
     .header-ul li a {
         font-size: 25px;
-        color: black;
         left: -100px;
         top: 10px;
     }
@@ -2337,12 +2283,8 @@ footer a:visited {
     .header-ul li a ion-icon {
         font-size: 40px;
         color: black;
-    } 
-
-
-    .open-menu-bar {
-        color: #000;
     }
+
 
     .open-menu-bar,
     .close-menu-bar {
@@ -2365,7 +2307,7 @@ footer a:visited {
         z-index: 9;
     }
 
-    
+
     .links-container {
         flex-direction: column;
         align-items: flex-start;
@@ -2399,11 +2341,6 @@ footer a:visited {
 
     /*BANNER STARTS*/
 
-    .banner-container {
-        max-width: 100%;
-        max-height: 100%;
-    }
-
     .banner button {
         top: 370px;
         font: 16px cabin;
@@ -2416,7 +2353,7 @@ footer a:visited {
     /* VIDEO AREA STARTS*/
 
     .background-image video {
-        margin: 30px 10px;
+        margin: 50px 10px;
     }
 
     .background-image h1 {
@@ -2427,14 +2364,15 @@ footer a:visited {
 
     .text-container {
         width: 30%;
-        height: 215px;
-        top: -250px;
+        height: 202px;
+        top: -260px;
     }
 
     .background-image p {
         font: 6px cabin;
         text-align: justify;
         line-height: 10px;
+        top: 50px;
     }
 
     /* VIDEO AREA ENDS*/
@@ -2468,7 +2406,7 @@ footer a:visited {
 
     /*  ABOUT PARAGRAPH AREA STARTS */
 
-     .sty {
+    .sty {
         font: 14px poppins;
         font-weight: 650;
         color: red;
