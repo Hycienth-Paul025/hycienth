@@ -1854,8 +1854,6 @@ footer a:visited {
 
 @media screen and (max-width:430px) {
 
-
-
     html {
         font-size: 11px;
     }
@@ -1930,7 +1928,7 @@ footer a:visited {
     }
 
     header{
-        width: 102.5%;
+        width: 100vw;
     }
 
     .header-nav {
@@ -2014,7 +2012,7 @@ footer a:visited {
     /*BANNER STARTS*/
 
     .banner {
-        width: 102.5%;
+        width: fit-content;
     }
  
 
@@ -2036,7 +2034,7 @@ footer a:visited {
     }
 
     .background-image video {
-        margin: 30px 10px;
+        margin: 30px 5px;
     }
 
     .text-container {
@@ -2122,7 +2120,7 @@ footer a:visited {
     }
 
     address ion-icon {
-        color: red;
+        font-size: 18px;
     }
 
     .contact {
@@ -2205,7 +2203,7 @@ footer a:visited {
 
     .product {
         line-height: 2rem;
-        margin: 5rem;
+        margin: 10px 5px;
     }
 
 }
@@ -2354,7 +2352,7 @@ footer a:visited {
     /* VIDEO AREA STARTS*/
 
     .background-image video {
-        margin: 50px 10px;
+        margin: 50px 2px;
     }
 
     .background-image h1 {
@@ -2407,11 +2405,9 @@ footer a:visited {
 
     /*  ABOUT PARAGRAPH AREA STARTS */
 
-    .sty {
+    .style {
         font: 14px poppins;
         font-weight: 650;
-        color: red;
-        background-color: #00ff00;
     }
 
     .about {
@@ -2438,9 +2434,6 @@ footer a:visited {
         font-size: 13px;
     }
 
-    address ion-icon {
-        color: red;
-    }
 
     .contact {
         font-size: 13px;
@@ -2453,6 +2446,7 @@ footer a:visited {
 
     .product {
         font-size: 14px;
+        margin: 10px 5px;
     }
 
 
@@ -2465,7 +2459,7 @@ footer a:visited {
 
 
     footer {
-        max-width: 102.5%;
+        max-width: 100%;
         height: auto;
     }
 
