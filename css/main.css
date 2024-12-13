@@ -681,7 +681,8 @@ main .toast {
 
 .notify,
 .notice {
-    font: 15px arial;
+    font: 13px arial;
+    margin: -5px 0;
 }
 
 .go-back-btn button {
@@ -768,7 +769,7 @@ main .toast {
 
 .notify,
 .notice {
-    font: 14px arial;
+    font: 13px arial;
 }
 
 
